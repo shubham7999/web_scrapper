@@ -24,7 +24,7 @@ function extract(html)
     console.log("html" , htmldoc);
     console.log(val);
     console.log($(ele[0]).html());
-   console.log(ele);
+  // console.log(ele);
  
 }
 

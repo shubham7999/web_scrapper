@@ -19,5 +19,18 @@ function callback(err, response, html)
 
 function extract(html)
 {
+    let $ = cheerio.load(html);
+    let element = $(".match-info.match-info-MATCH .team");
+    for(let i=0;i<element.length;i++)
+    {
+        let htmlele = $(element[i])
+        // console.log(htmlele);
+         let check = htmlele.hasClass("team-gray");
+         console.log(htmlele.find("p").html());
+         if(!check) console.log("This one is the winning team" , htmlele.text());
+        console.log($(element[i]).html());
+        // console.log("first elememt");
+    }
+
     
 }
