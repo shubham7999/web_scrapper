@@ -59,7 +59,7 @@ function givemebowlers($, winteam)
         let arr = ele.split("INNINGS");
         let name = arr[0].trim();
         if(name != winteam){
-        console.log(name);
+      //  console.log(name);
        // console.log($(table[i]).html())
        let maxwickettaker = "";
        let maxi = -1000000000;
